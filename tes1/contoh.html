@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Test Title</title>
+        <script>
+            function displayName() {
+                alert(document.getElementById('txtNama').value);
+                document.getElementById('lblNama').innerHTML = document.getElementById('txtNama').value
+                document.getElementById('txtNama').innerHTML = "test";
+            }
+        </script>
+    </head>
+    <body>
+        Masukkan Nama : <input type="text" id="txtNama"/>
+        <br />
+        <button onclick="displayName()">Simpan</button>
+        <br />
+        Nama Saya Adalah : <label id="lblNama"></label>
+    </body>
+</html>
